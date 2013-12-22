@@ -2,49 +2,49 @@
 
 ## Data flow
 
-- Data flow of the control signal and machine status.
+Data flow of the control signal and machine status.
 
--- control signal
+* control signal
 
-   WEB browser (client/) -> server (server/) -> android -> app (android/) -> micon (physical/board) -> machine
+        WEB browser (client/) -> server (server/) -> android -> app (android/) -> micon (physical/board) -> machine
 
--- machine status
+* machine status
 
-   machine -> micon (micon)
+        machine -> micon (micon)
 
-- Data flow of the Captured image and sound.
+Data flow of the Captured image and sound.
 
--- image
+* image
 
-   android -> vendor app (https://play.google.com/store/apps/details?id=com.pas.webcam) -> server -> web browser
+        android -> vendor app (https://play.google.com/store/apps/details?id=com.pas.webcam) -> server -> web browser
 
--- sound
+* sound
 
-   android -> app (android/) -> server (server/wserver.rb) -> web browser (client/)
+        android -> app (android/) -> server (server/wserver.rb) -> web browser (client/)
 
 
 ## Directory
 
 ### android/
 
--- android app to control the micon board and to stream the sound.
+* android app to control the micon board and to stream the sound.
 
 ### client/
 
--- User interface for the Web browser.
+* User interface for the Web browser.
 
 ### server/wserver.rb
 
--- relays control signal
+* relays control signal
 
 ### server/Kanjikoe/
 
--- converts the Japanese string to the voice chip's command.
+* converts the Japanese string to the voice chip's command.
 
 ### physical/board
 
--- PSoC micon program for machine control.
+* PSoC micon program for machine control.
 
 ### physical/acryl.ai
 
--- Acril cutting data.
+* Acril cutting data.
