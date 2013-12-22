@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StartStreaming"
+            android:id="@+id/streamingButton" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direction"
+                android:id="@+id/textDirection"
+                android:layout_gravity="left|center_vertical"/>
+
+        <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/direction"
+                android:layout_gravity="center"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Camera pan (H)"
+                android:id="@+id/textCameraPanH"
+                android:layout_gravity="left|center_vertical"/>
+
+        <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cameraPanH"
+                android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Camera pan (V)"
+            android:id="@+id/textCameraPanV"
+            android:layout_gravity="left|center_vertical"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cameraPanV"
+            android:layout_gravity="center"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accel"
+                android:id="@+id/textAccel"
+                android:layout_gravity="left|center_vertical"/>
+        <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/accel"
+                android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="2">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log:"
+                android:id="@+id/textLog"
+                android:layout_gravity="left|center_vertical"></TextView>
+        <ScrollView
+                android:id="@+id/console_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView android:id="@+id/console"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:minLines="22"
+                      android:maxLines="22"/>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

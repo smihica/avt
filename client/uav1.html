@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>UAV</title>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="https://releases.flowplayer.org/js/flowplayer-3.2.12.min.js"></script>
+    <script type="text/javascript" src="http://uav.target:8080/common.js"></script>
+    <script type="text/javascript" src="classify.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <img id="video_feed" src="http://uav.target:8080/video" alt="Video feed"></img>
+    <div id="audio_feed" src="http://uav.target:8081/stream.mp3"></div>
+    <br/>
+    <div id="holder">
+      <select name="" id="car_select">
+        <option value="0">CAR_0</option>
+        <option value="1" selected="true">CAR_1</option>
+      </select>
+      <input type="text" name="" value="" id="speak_input"/>
+      <input type="text" name="" value="0" id="target_controller"/>
+      <span id="data"></span>
+      <span id="speak"></span>
+      <span id="pad"></span>
+      <span id="batt"></span>
+    </div>
+  </body>
+</html>
+

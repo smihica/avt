@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="FTDriver">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/libraries/FTDriver" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/libraries/FTDriver/gen" />
+      <root url="file://$PROJECT_DIR$/libraries/FTDriver/src" />
+      <root url="file://$PROJECT_DIR$/libraries/FTDriver/build/source/r/debug" />
+      <root url="file://$PROJECT_DIR$/libraries/FTDriver/build/source/r/release" />
+      <root url="file://$PROJECT_DIR$/libraries/FTDriver/build/source/buildConfig/debug" />
+      <root url="file://$PROJECT_DIR$/libraries/FTDriver/build/source/buildConfig/release" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,18 @@
+# Requirements
+
+- This is able to compile only in Linux.
+- ICU ( $ sudo apt-get install libicu-dev )
+- AqKanji2Koe Developer License [Linux package] (http://shop.a-quest.com/?pid=49641008)
+-- Install AqKanji2Koe and extract aq_dic_large/ into this directory.
+
+# How to Make
+
+ $ make
+
+# Usage
+
+- The bin (Kanji2KoeCmd) can execute only in this directory.
+- Because it requires aq_dic_large/ see the source.
+
+ $ echo "音声合成テスト" | ./Kanji2KoeCmd
+ onseigo-se-te'_suto.

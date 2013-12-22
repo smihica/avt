@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/Users/smihica/code/uav/android/libraries/FTDriver/res" >
+            <file
+                name="ic_launcher"
+                path="/Users/smihica/code/uav/android/libraries/FTDriver/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/smihica/code/uav/android/libraries/FTDriver/res/drawable-ldpi/ic_launcher.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/smihica/code/uav/android/libraries/FTDriver/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="main"
+                path="/Users/smihica/code/uav/android/libraries/FTDriver/res/layout/main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="/Users/smihica/code/uav/android/libraries/FTDriver/res/values/strings.xml"
+                qualifiers="" >
+                <string name="app_name" >FTDriver
+                </string>
+                <string name="hello" >Hello World!
+                </string>
+            </file>
+        </source>
+        <source path="/Users/smihica/code/uav/android/libraries/FTDriver/build/res/rs/release" />
+    </dataSet>
+    <dataSet config="release" >
+        <source path="/Users/smihica/code/uav/android/libraries/FTDriver/src/release/res" />
+    </dataSet>
+
+</merger>

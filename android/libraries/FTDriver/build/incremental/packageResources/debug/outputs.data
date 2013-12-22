@@ -1,0 +1,8 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1383903000000 4147 91c0eed42bb6ffbb3e720f4309d06edaa5ab81b1 /Users/smihica/code/uav/android/libraries/FTDriver/build/bundles/debug/res/drawable-hdpi/ic_launcher.png
+1383907584000 278 c11f142dcbe6877f666bd14da485a28e1c6a2457 /Users/smihica/code/uav/android/libraries/FTDriver/build/bundles/debug/res/values/values.xml
+1383907584000 477 a448745acc2cb43a914798b654ca1bff9071f918 /Users/smihica/code/uav/android/libraries/FTDriver/build/bundles/debug/res/layout/main.xml
+1383903000000 1723 dab9122f41b8f635738ab44b288f12412bbdf3ce /Users/smihica/code/uav/android/libraries/FTDriver/build/bundles/debug/res/drawable-ldpi/ic_launcher.png
+1383903000000 2574 7cbb0a80689da95c9758ccbb9b8632edc6630476 /Users/smihica/code/uav/android/libraries/FTDriver/build/bundles/debug/res/drawable-mdpi/ic_launcher.png

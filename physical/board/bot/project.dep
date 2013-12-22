@@ -1,0 +1,59 @@
+# DO NOT DELETE
+./obj/boot.o : \
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8ssc.inc\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\lib\GLOBAL~1.INC\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\memory.inc
+./obj/delay.o : \
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.inc\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\memory.inc
+./obj/main.o :  ./lib/PSoCAPI.h ./lib/PWM16_1.h ./lib/PWM16_2.h\
+   ./lib/PWM16_3.h ./lib/PWM16_4.h ./lib/UART_1.h ./lib/UART_2.h\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.h\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/_const.h\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/limits.h\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/stdlib.h\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\delay.h
+./lib/obj/psocconfig.o :  ./lib/GLOBAL~1.INC\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.inc\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\memory.inc
+./lib/obj/psocconfigtbl.o : \
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.inc
+./lib/obj/pwm16_1.o :  ./lib/PWM16_1.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.inc\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\memory.inc
+./lib/obj/pwm16_1int.o :  ./lib/PWM16_1.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.inc\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\memory.inc
+./lib/obj/pwm16_2.o :  ./lib/PWM16_2.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.inc\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\memory.inc
+./lib/obj/pwm16_2int.o :  ./lib/PWM16_2.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.inc\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\memory.inc
+./lib/obj/pwm16_3.o :  ./lib/PWM16_3.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.inc\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\memory.inc
+./lib/obj/pwm16_3int.o :  ./lib/PWM16_3.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.inc\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\memory.inc
+./lib/obj/pwm16_4.o :  ./lib/PWM16_4.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.inc\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\memory.inc
+./lib/obj/pwm16_4int.o :  ./lib/PWM16_4.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.inc\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\memory.inc
+./lib/obj/uart_1.o :  ./lib/UART_1.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.inc\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\memory.inc
+./lib/obj/uart_1int.o :  ./lib/UART_1.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.inc\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\memory.inc
+./lib/obj/uart_1plus.o : 
+./lib/obj/uart_2.o :  ./lib/UART_2.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.inc\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\memory.inc
+./lib/obj/uart_2int.o :  ./lib/UART_2.inc\
+   C:/PROGRA~2/Cypress/PSOCDE~1/5.4/Common/CY110F~1/tools/include/CY8C29~1/m8c.inc\
+   C:\cygwin\home\smihica\code\smapo\beacon\bot\bot\memory.inc
+./lib/obj/uart_2plus.o : 
