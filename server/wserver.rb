@@ -71,14 +71,10 @@ end
 def main()
   # Process.daemon(nochdir=true) if ARGV[0] == "-D"
   sport = 10001
-  wport = 51234
-  argv0 = (ARGV[0] or "0").to_i
-  sport = 10001 + argv0
-  wport = 51234 + argv0
+  wport = 8080
   puts("server  port: ", sport)
   puts("websock port: ", wport)
 
-  server = TCPServer.open(sport)
   b2m_r, b2m_w = IO.pipe
   m2b_r, m2b_w = IO.pipe
   p [ b2m_r, b2m_w, m2b_r, m2b_w ]
@@ -101,7 +97,8 @@ def main()
   end
 
   loop do
-    Thread.start(server.accept) do |s|
+    Thread.start() do
+      s = TCPSocket.open("172.32.3.8", sport)
       command = s.gets.chomp
       if command.match(/^BOT$/)
         puts 'uav accepted.'
