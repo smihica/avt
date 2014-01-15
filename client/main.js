@@ -184,7 +184,7 @@ var UAV = classify("UAV", {
         batt_sw1:  DEFAULT.batt_sw1,
         batt_sw2:  DEFAULT.batt_sw2
       };
-      this.recognition = new Recognition(this);
+      // this.recognition = new Recognition(this);
       if (id) this.targetCarID = id;
       $("#car_select").change(function(e) {
         self.targetCarID = $(this).val();
@@ -215,9 +215,9 @@ var UAV = classify("UAV", {
       d.batt_sw1  = d.batt_sw2 = (status.keys['start'] == 0 ? 0 : 1);
 
       if (status.keys['circle'] != 0) {
-        this.recognition.start();
+        // this.recognition.start();
       } else {
-        this.recognition.stop();
+        // this.recognition.stop();
       }
 
       this.applyStatus();
