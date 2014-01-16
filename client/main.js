@@ -134,9 +134,9 @@ var UAVConnection = classify("UAVConnection", {
   method: {
     init: function(id) {
       var self = this;
-      var port = "51234";
-      if (id === "1") { port = "51235"; }
-      this.ws = new WebSocket("ws://uav.local:" + port);
+      var port = "8080";
+      // if (id === "1") { port = "51235"; }
+      this.ws = new WebSocket("ws://" + location.host + ":" + port);
 
       this.ws.onmessage = function(evt) {
         var data = strip(evt.data);
@@ -170,7 +170,7 @@ var UAV = classify("UAV", {
     con: null,
     data: null,
     recognition: null,
-    targetCarID: '0'
+    //targetCarID: '0'
   },
   method: {
     init: function(id) {
@@ -185,10 +185,11 @@ var UAV = classify("UAV", {
         batt_sw2:  DEFAULT.batt_sw2
       };
       // this.recognition = new Recognition(this);
-      if (id) this.targetCarID = id;
-      $("#car_select").change(function(e) {
+      // if (id) this.targetCarID = id;
+      /*$("#car_select").change(function(e) {
         self.targetCarID = $(this).val();
       });
+      */
       $("#speak_input").keyup(function(e){
         if (e.keyCode == 13) {
           var string = $(this).val();
@@ -205,7 +206,7 @@ var UAV = classify("UAV", {
       });
     },
     setStatus: function (status) {
-      var range = CAR_SETTINGS[this.targetCarID].range;
+      var range = CAR_SETTINGS[0].range; // this.targetCarID
       var stick = status.stick;
       var d = this.data;
       d.accel     = stick.left.v.functionApply(quad_f).map(range.accel[0], range.accel[1]).get();
@@ -440,7 +441,7 @@ var GameController = classify("GameController", {
 });
 
 $(function() {
-  var uav = new UAV($("#car_select").val());
+  var uav = new UAV(/*$("#car_select").val()*/0);
   var controller = new GameController(80, function(status) {
     var html = '', keyNames = GameController.keyNames;
     for (var i = 0, l = keyNames.length; i < l; i++) {
